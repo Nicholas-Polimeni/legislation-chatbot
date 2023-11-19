@@ -24,6 +24,11 @@ def main():
         st.title("US Legislation Chatbot")
         st.subheader("Enter a query about US legislation")
         user_input = st.text_input("Input", label_visibility="hidden")
+        if user_input:
+            with st.spinner(
+                "Please wait while we analyze thousands of documents (average response time: 30 sec)..."
+            ):
+                answer, context = query_llm(user_input)
         st.divider()
         st.write(
             """
@@ -55,11 +60,7 @@ def main():
             [Faris Durrani](https://www.linkedin.com/in/farisdurrani/), [Justin Singh](https://www.linkedin.com/in/justin-singh-/)**
             """
         )
-        if user_input:
-            with st.spinner(
-                "Please wait while we analyze thousands of documents (average response time: 30 sec)..."
-            ):
-                answer, context = query_llm(user_input)
+
     with right:
         if answer:
             context = [ast.literal_eval(item) for item in context]
