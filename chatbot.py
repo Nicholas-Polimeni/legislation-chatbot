@@ -16,7 +16,7 @@ def query_llm(query):
 
 
 def main():
-    st.set_page_config(layout="wide", page_title="Legislation LLM")
+    st.set_page_config(layout="wide", page_title="Legislation Chatbot")
     left, right = st.columns(2, gap="large")
     answer = None
 
