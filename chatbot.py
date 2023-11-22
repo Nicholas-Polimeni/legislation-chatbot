@@ -26,7 +26,7 @@ def main():
         user_input = st.text_input("Input", label_visibility="hidden")
         if user_input:
             with st.spinner(
-                "Please wait while we analyze thousands of documents (average response time: 30 sec)..."
+                "Please wait while we analyze thousands of documents (average response time: <10 sec)..."
             ):
                 answer, context = query_llm(user_input)
         st.divider()
