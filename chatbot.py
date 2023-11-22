@@ -57,7 +57,7 @@ def main():
             for topics you care about)!
             
             **Authors: [Nicholas Polimeni](https://www.linkedin.com/in/nickpolimeni/), 
-            [Faris Durrani](https://www.linkedin.com/in/farisdurrani/), [Justin Singh](https://www.linkedin.com/in/justin-singh-/)**
+            [Faris Durrani](https://www.linkedin.com/in/farisdurrani/)**
             """
         )
 
