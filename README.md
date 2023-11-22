@@ -1,6 +1,8 @@
 # legislation-chatbot
 
 ### [Link](https://legislation-chat.streamlit.app/) to Web App
+**Winner of "Best Use of Open Source Models" by Hugging Face at AI ATL.**
+
 ### What is this?
 An intelligent, ChatGPT-like chatbot for asking about US legislation, built on
 cutting-edge LLMs and a database of thousands of Congressional documents. It is
