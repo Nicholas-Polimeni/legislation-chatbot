@@ -23,7 +23,8 @@ def main():
     with left:
         st.title("US Legislation Chatbot")
         st.subheader("Enter a query about US legislation")
-        st.subheader("Note: the tool is currently down due to cloud costs and a code overhaul to improve efficiency (it was a hackathon project). It will be up again within a week.")
+        st.warning("""Note: the tool is currently down due to cloud costs and a code overhaul to improve efficiency (it was a hackathon project).
+            If you'd like to find out more details in the meantime, check [here](https://devpost.com/software/legislation-llm) or contact Nicholas Polimeni.""")
         user_input = st.text_input("Input", label_visibility="hidden")
         if user_input:
             with st.spinner(
